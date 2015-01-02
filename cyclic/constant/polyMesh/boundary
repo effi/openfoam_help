@@ -1,0 +1,114 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.2.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       polyBoundaryMesh;
+    location    "constant/polyMesh";
+    object      boundary;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+11
+(
+    cylinderWalls
+    {
+        type            wall;
+        nFaces          18480;
+        startFace       9576338;
+    }
+    groundWall
+    {
+        type            wall;
+        nFaces          29464;
+        startFace       9594818;
+    }
+    leftPane
+    {
+        type            symmetryPlane;
+        inGroups        1(symmetryPlane);
+        nFaces          13802;
+        startFace       9624282;
+    }
+    rightPane
+    {
+        type            symmetryPlane;
+        inGroups        1(symmetryPlane);
+        nFaces          13802;
+        startFace       9638084;
+    }
+    upperWall
+    {
+        type            wall;
+        nFaces          35272;
+        startFace       9651886;
+    }
+    cyc_in1
+    {
+        type            cyclic;
+        inGroups        1(cyclic);
+        nFaces          4120;
+        startFace       9687158;
+        matchTolerance  0.0001;
+        transform       unknown;
+        neighbourPatch  cyc_out1;
+    }
+    cyc_out1
+    {
+        type            cyclic;
+        inGroups        1(cyclic);
+        nFaces          4120;
+        startFace       9691278;
+        matchTolerance  0.0001;
+        transform       unknown;
+        neighbourPatch  cyc_in1;
+    }
+    cyc_in2
+    {
+        type            cyclic;
+        inGroups        1(cyclic);
+        nFaces          4532;
+        startFace       9695398;
+        matchTolerance  0.0001;
+        transform       unknown;
+        neighbourPatch  cyc_out2;
+    }
+    cyc_out2
+    {
+        type            cyclic;
+        inGroups        1(cyclic);
+        nFaces          4532;
+        startFace       9699930;
+        matchTolerance  0.0001;
+        transform       unknown;
+        neighbourPatch  cyc_in2;
+    }
+    cyc_in3
+    {
+        type            cyclic;
+        inGroups        1(cyclic);
+        nFaces          4120;
+        startFace       9704462;
+        matchTolerance  0.0001;
+        transform       unknown;
+        neighbourPatch  cyc_out3;
+    }
+    cyc_out3
+    {
+        type            cyclic;
+        inGroups        1(cyclic);
+        nFaces          4120;
+        startFace       9708582;
+        matchTolerance  0.0001;
+        transform       unknown;
+        neighbourPatch  cyc_in3;
+    }
+)
+
+// ************************************************************************* //
