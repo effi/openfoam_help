@@ -30,12 +30,12 @@ gradSchemes
 divSchemes
 {
     default         none;
-    div(phi,U)      Gauss limitedLineaerV 1;
-    div(phi,k)      Gauss limitedLineaer 1;
-    div(phi,epsilon) Gauss limitedLineaer 1;
-    div(phi,R)      Gauss limitedLineaer 1;
-    div(R)          Gauss limitedLineaer 1;
-    div(phi,nuTilda) Gauss limitedLineaer 1;
+    div(phi,U)      Gauss limitedLinearV 1;
+    div(phi,k)      Gauss limitedLinear 1;
+    div(phi,epsilon) Gauss limitedLinear 1;
+    div(phi,R)      Gauss limitedLinear 1;
+    div(R)          Gauss limitedLinear 1;
+    div(phi,nuTilda) Gauss limitedLinear 1;
     div((nuEff*dev(T(grad(U))))) Gauss linear;
 }
 

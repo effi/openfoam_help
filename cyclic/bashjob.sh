@@ -13,6 +13,7 @@ module load cae/openfoam/2.2.2
 source /opt/bwhpc/common/cae/openfoam/2.2.x/OpenFOAM-2.2.x/etc/bashrc
 
 cd /work/workspace/scratch/st_lrt70667-test-0/cyclic/
+mv job* oldjobslogs/
 perl adjustToNodes.pl $SLURM_NPROCS
 decomposeParHPC -force
 mpirun -bind-to-core -bycore -report-bindings pisoFoam -parallel
