@@ -1,0 +1,8 @@
+**
+!.gitignore
+!0/*
+!constant/*
+!system/*
+!adjustToNodes.pl
+!bashjob.sh
+!README.md

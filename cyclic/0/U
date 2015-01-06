@@ -32,7 +32,7 @@ boundaryField
     upperWall
     {
         type fixedValue;
-        value           uniform (1 0 0);
+        value           uniform (250 0 0);
     }
     cyc_in1
     {
