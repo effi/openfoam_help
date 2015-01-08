@@ -1,5 +1,5 @@
 #!/bin/bash
-#MSUB -l nodes=1:ppn=6
+#MSUB -l nodes=1:ppn=8
 #MSUB -l walltime=08:00:00
 #MSUB -l pmem=4000mb
 #MSUB -N re40_test 
