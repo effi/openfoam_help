@@ -1,5 +1,5 @@
-**
 !.gitignore
+/constant/polymesh/**
 !0/*
 !constant/*
 !system/*
