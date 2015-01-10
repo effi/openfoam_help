@@ -22,7 +22,7 @@ ddtSchemes
 
 gradSchemes
 {
-    default         pointCellsLeastSquares;
+    default         leastSquares;
     /* grad(p)         Gauss linear; */
     /* grad(U)         Gauss linear; */
 }
